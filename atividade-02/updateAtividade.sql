@@ -47,7 +47,7 @@ WHERE marca = 'Rare Beauty';
 SELECT * FROM produtos;
 
 UPDATE produtos SET preco = preco - preco * 0.10
-WHERE estoque > 100;
+WHERE estoque > 200;
 SELECT * FROM produtos;
 
 /*bonus*/
