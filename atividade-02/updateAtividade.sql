@@ -34,8 +34,7 @@ INSERT INTO produtos (nome, marca, preco, categoria, estoque) VALUES
 
 SELECT * FROM produtos;
 
-UPDATE produtos
-SET preco = preco * 0.80
+UPDATE produtos SET preco = preco - preco * 0.20
 WHERE categoria = 'Skincare';
 SELECT * FROM produtos;
 
@@ -43,19 +42,16 @@ UPDATE produtos
 SET estoque = estoque + 50;
 SELECT * FROM produtos;
 
-UPDATE produtos
-SET preco = preco * 1.15
+UPDATE produtos SET preco = preco + preco * 0.15
 WHERE marca = 'Rare Beauty'; 
 SELECT * FROM produtos;
 
-UPDATE produtos
-SET preco = preco * 0.90
+UPDATE produtos SET preco = preco - preco * 0.10
 WHERE estoque > 100;
 SELECT * FROM produtos;
 
 /*bonus*/
-UPDATE produtos
-SET preco = preco * 0.70
+UPDATE produtos SET preco = preco * 0.30
 WHERE categoria = 'Perfumes';
 SELECT * FROM produtos;
 
